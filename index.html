@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FORUM</title>  
-<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
 
+<link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.4/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script> 
+ 
     <link rel="stylesheet" href="styles/forum.css">
 </head>
-<body>
     <body class="roboto h-full bg-white">
     <navbar class="nav">
-    <header class="retro">Retro</header>
+    <header class="retro text-4xl ">Retro</header>
 
     <div class="tooltip" data-tip="home">
   <button class="btn bg-white">
@@ -44,8 +44,8 @@
 <p>Share your favorite opinion and wp <br>
 forum coffee mug!</p>
 <div class="input-group">
-  <input type="text" placeholder="search here anything" class="input">
-  <span class="search btn-primary">search</span>
+  <input id="search" type="text"  placeholder="search here anything" class="input">
+  <span onclick="handleSearch()" class="search btn-primary">search</span>
 </div>
 </div>
 <div class="card bg-white text-black">
@@ -59,10 +59,226 @@ forum coffee mug!</p>
    
 </div>
  </section>
+ <section class="Discuss-section">
+  <div class="discuss">
+    <h1 class="text-black text-4xl text-center">Let's Discuss</h1>
+    <p class="para text-black text-center"> Yes, you can run unit tests and view the
+       results directly within the app. The <br>
+integrated testing features allow for a streamlined </p></div>
+<!-- <h1 class="text-4xl">Forum</h1> -->
+ <!-- posts element -->
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+ 
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+<div id="element-container"> 
+ <div class="card bg-white width-350px p-6">
+    <div class="card-header">
+      <img src="https://i.ibb.co/0QRxkd5/pexels-jan-kop-iva-3525908.jpg" alt="Author Avatar">
+      <div>
+        <small># Comedy &nbsp; Author: <strong>John Doe</strong></small>
+      </div>
+    </div>
+    <div class="card-title">10 Kids Unaware of Their Halloween Costume</div>
+    <div class="card-description">
+      It’s one thing to subject yourself to ha Halloween costume mishap because,
+      hey that’s your prerogative.
+    </div>
+    <div class="card-footer">
+      <div>
+        <i class="far fa-comment"></i> 560 &nbsp;
+        <i class="far fa-eye"></i> 1,568 &nbsp;
+        <i class="far fa-clock"></i> 5 min
+</div>
+ <a href="#" class="read-more"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div> 
+</div>
+
+ </section>
+ <!-- card section -->
+<section class="latest-posts">
+  <div class="posts text-black text-center">                                  
+   <h1 class="text-4xl">Latest Posts</h1>
+  <p>Yes, you can run unit tests and view the results directly within the app.<br> The 
+integrated testing features allow for a streamlined .</p>
+ </div>
+ <div class="card-containers display flex">
+  <div id="card-container">
+  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure><img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="img" /></figure>
+  <div class="card-body">
+    <h2 class="card-title"> What will a mars habitat force that impact in our daily life!!!</h2>
+    <p class="text-black"> Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-author">
+      <div class="author-img">
+        <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="">
+      </div>
+      <div class="author-info">
+        <h4>Cameron Williamson</h4>
+        <p>Unknown</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <div id="card-container">
+  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure><img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="img" /></figure>
+  <div class="card-body">
+    <h2 class="card-title"> What will a mars habitat force that impact in our daily life!!!</h2>
+    <p class="text-black"> Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-author">
+      <div class="author-img">
+        <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="">
+      </div>
+      <div class="author-info">
+        <h4>Cameron Williamson</h4>
+        <p>Unknown</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div id="card-container">
+  <div class="card card-compact w-96 bg-base-100 shadow-xl">
+  <figure><img src="https://i.ibb.co/VYGSkLz/pexels-jeshootscom-442576.jpg" alt="img" /></figure>
+  <div class="card-body">
+    <h2 class="card-title"> What will a mars habitat force that impact in our daily life!!!</h2>
+    <p class="text-black"> Yes, you can run unit tests and view the results directly within the app. </p>
+    <div class="card-author">
+      <div class="author-img">
+        <img src="https://i.ibb.co/z8zx95w/pexels-davide-de-giovanni-1649675.jpg" alt="">
+      </div>
+      <div class="author-info">
+        <h4>Cameron Williamson</h4>
+        <p>Unknown</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>                        
+</div>
+</section>
  </main>
  <footer>
 
  </footer>
- 
+ <script src="js/forum.js"></script>
+  
 </body>
 </html>
